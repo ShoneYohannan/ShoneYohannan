@@ -120,13 +120,16 @@ Real-time facial emotion recognition using Mini-Xception and OpenCV.
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=ShoneYohannan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+<a href="https://github.com/ShoneYohannan">
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=ShoneYohannan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&cache_seconds=86400" />
+</a>
 
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShoneYohannan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+<a href="https://github.com/ShoneYohannan">
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShoneYohannan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&cache_seconds=86400" />
+</a>
 
 </div>
 
----
 
 ## 🐍 Contribution Snake
 
