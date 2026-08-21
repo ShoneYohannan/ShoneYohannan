@@ -1,16 +1,147 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**ShoneYohannan/ShoneYohannan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# 👋 Hey, I'm Shone Yohannan
 
-Here are some ideas to get you started:
+### `AI & Data Science Student` · `Cloud Developer` · `Full-Stack Developer`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p>
+  <a href="https://github.com/ShoneYohannan">
+    <img src="https://img.shields.io/badge/GitHub-ShoneYohannan-181717?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://www.linkedin.com/in/shone-yohannan-9ba264291/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
+  </a>
+</p>
+
+</div>
+
+---
+
+## 🖥️ `whoami`
+
+```text
+> Initializing ShoneYohannan...
+
+  Name       : Shone Yohannan
+  Focus      : AI • Data • Cloud
+  Currently  : Building & learning
+  Environment: Linux • Git • AWS
+  Languages  : Python • JavaScript • Java
+  Backend    : Node.js • Express • FastAPI
+  Frontend   : React • Vite
+  Database   : MongoDB • MySQL
+```
+
+## ⚡ What I Build
+
+* 🤖 AI & Machine Learning applications
+* ☁️ Cloud-based applications and deployments
+* 🌐 Full-stack web applications
+* 📊 Data-driven applications
+* 🔐 Security-focused projects
+* 🚀 Automation and developer tools
+
+## 🛠️ Tech Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=python,java,js,react,nodejs,express,fastapi,mongodb,mysql,aws,linux,git,github,vscode" />
+
+</p>
+
+---
+
+## 🚀 Featured Projects
+
+<table>
+<tr>
+<td width="50%">
+
+### ☁️ CloudPilot
+
+Intelligent cloud application deployment, monitoring and container management platform.
+
+**Tech:** Node.js · Express · MongoDB · AWS
+
+<a href="https://github.com/ShoneYohannan/Cloudpilot">View Project →</a>
+
+</td>
+
+<td width="50%">
+
+### 🧭 Navora
+
+A modern web application built with JavaScript.
+
+**Tech:** JavaScript
+
+<a href="https://github.com/ShoneYohannan/Navora">View Project →</a>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### 🛡️ CrowdGuard
+
+A crowd-management focused application.
+
+**Tech:** JavaScript
+
+<a href="https://github.com/ShoneYohannan/CrowdGuard">View Project →</a>
+
+</td>
+
+<td width="50%">
+
+### 🧠 Emotion-Aware AI
+
+Real-time facial emotion recognition using Mini-Xception and OpenCV.
+
+**Tech:** Python · OpenCV · Deep Learning
+
+<a href="https://github.com/ShoneYohannan/Emotion-Aware-Ai">View Project →</a>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧪 Other Projects
+
+* 🩺 [AI Doctor Voice Assistant](https://github.com/ShoneYohannan/AI-Doctor-Voice-Assistant)
+* 🔐 [Secure Notes Manager](https://github.com/ShoneYohannan/Secure-notes-manager)
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=ShoneYohannan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShoneYohannan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub contribution snake" />
+
+</div>
+
+---
+
+<div align="center">
+
+### `Building • Learning • Experimenting`
+
+<img src="https://komarev.com/ghpvc/?username=ShoneYohannan&style=for-the-badge&color=blueviolet" />
+
+</div>
