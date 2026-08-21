@@ -1,264 +1,262 @@
-<svg width="900" height="430" viewBox="0 0 900 430" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="430" viewBox="0 0 900 430"
+xmlns="http://www.w3.org/2000/svg">
 
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f0b1f"/>
-      <stop offset="100%" stop-color="#17102d"/>
-    </linearGradient>
+<defs>
 
-    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#ec4899"/>
-    </linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0f0b1f"/>
+    <stop offset="100%" stop-color="#17102d"/>
+  </linearGradient>
 
-    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#60a5fa"/>
-      <stop offset="100%" stop-color="#a78bfa"/>
-    </linearGradient>
+  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#a855f7"/>
+    <stop offset="100%" stop-color="#ec4899"/>
+  </linearGradient>
 
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#60a5fa"/>
+    <stop offset="100%" stop-color="#a78bfa"/>
+  </linearGradient>
 
-  <!-- Background -->
-  <rect width="900" height="430" rx="18" fill="url(#bg)"/>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
 
-  <!-- Border -->
-  <rect x="1" y="1" width="898" height="428" rx="17"
-        fill="none" stroke="#8b5cf6" stroke-opacity="0.45"/>
+</defs>
 
-  <!-- Header -->
-  <text x="35" y="45"
-        fill="#f0abfc"
-        font-family="Arial, sans-serif"
-        font-size="25"
-        font-weight="700">
-    📊 GitHub Analytics
-  </text>
+<rect width="900" height="430" rx="18" fill="url(#bg)"/>
 
-  <line x1="35" y1="65" x2="865" y2="65"
-        stroke="#8b5cf6" stroke-opacity="0.35"/>
+<rect x="1" y="1" width="898" height="428" rx="17"
+      fill="none"
+      stroke="#8b5cf6"
+      stroke-opacity="0.45"/>
 
-  <!-- Profile -->
-  <text x="55" y="105"
-        fill="#c084fc"
-        font-family="Arial, sans-serif"
-        font-size="20"
-        font-weight="700">
-    SHONE YOHANNAN
-  </text>
+<text x="35" y="45"
+      fill="#f0abfc"
+      font-family="Arial, sans-serif"
+      font-size="25"
+      font-weight="700">
+  📊 GitHub Analytics
+</text>
 
-  <text x="55" y="130"
-        fill="#94a3b8"
-        font-family="Arial, sans-serif"
-        font-size="13">
-    AI &amp; Data Science • Cloud • Full Stack
-  </text>
+<line x1="35" y1="65" x2="865" y2="65"
+      stroke="#8b5cf6"
+      stroke-opacity="0.35"/>
 
-  <!-- Stats -->
-  <text x="60" y="175"
-        fill="#e2e8f0"
-        font-family="Arial, sans-serif"
-        font-size="15">
-    ☆
-  </text>
+<text x="55" y="105"
+      fill="#c084fc"
+      font-family="Arial, sans-serif"
+      font-size="20"
+      font-weight="700">
+  SHONE YOHANNAN
+</text>
 
-  <text x="90" y="175"
-        fill="#94a3b8"
-        font-family="Arial, sans-serif"
-        font-size="14">
-    Total Stars
-  </text>
+<text x="55" y="130"
+      fill="#94a3b8"
+      font-family="Arial, sans-serif"
+      font-size="13">
+  AI &amp; Data Science • Cloud • Full Stack
+</text>
 
-  <text x="285" y="175"
-        fill="#67e8f9"
-        font-family="Arial, sans-serif"
-        font-size="14"
-        font-weight="700">
-    2
-  </text>
+<text x="60" y="175"
+      fill="#e2e8f0"
+      font-family="Arial, sans-serif"
+      font-size="15">
+  ☆
+</text>
 
+<text x="90" y="175"
+      fill="#94a3b8"
+      font-family="Arial, sans-serif"
+      font-size="14">
+  Total Stars
+</text>
 
-  <text x="60" y="210"
-        fill="#e2e8f0"
-        font-family="Arial, sans-serif"
-        font-size="15">
-    ◷
-  </text>
+<text x="285" y="175"
+      fill="#67e8f9"
+      font-family="Arial, sans-serif"
+      font-size="14"
+      font-weight="700">
+  1
+</text>
 
-  <text x="90" y="210"
-        fill="#94a3b8"
-        font-family="Arial, sans-serif"
-        font-size="14">
-    Total Commits
-  </text>
+<text x="60" y="210"
+      fill="#e2e8f0"
+      font-family="Arial, sans-serif"
+      font-size="15">
+  ◷
+</text>
 
-  <text x="285" y="210"
-        fill="#67e8f9"
-        font-family="Arial, sans-serif"
-        font-size="14"
-        font-weight="700">
-    Building...
-  </text>
+<text x="90" y="210"
+      fill="#94a3b8"
+      font-family="Arial, sans-serif"
+      font-size="14">
+  Total Commits
+</text>
 
+<text x="285" y="210"
+      fill="#67e8f9"
+      font-family="Arial, sans-serif"
+      font-size="14"
+      font-weight="700">
+  74
+</text>
 
-  <text x="60" y="245"
-        fill="#e2e8f0"
-        font-family="Arial, sans-serif"
-        font-size="15">
-    ⑂
-  </text>
+<text x="60" y="245"
+      fill="#e2e8f0"
+      font-family="Arial, sans-serif"
+      font-size="15">
+  ⑂
+</text>
 
-  <text x="90" y="245"
-        fill="#94a3b8"
-        font-family="Arial, sans-serif"
-        font-size="14">
-    Pull Requests
-  </text>
+<text x="90" y="245"
+      fill="#94a3b8"
+      font-family="Arial, sans-serif"
+      font-size="14">
+  Pull Requests
+</text>
 
-  <text x="285" y="245"
-        fill="#67e8f9"
-        font-family="Arial, sans-serif"
-        font-size="14"
-        font-weight="700">
-    —
-  </text>
+<text x="285" y="245"
+      fill="#67e8f9"
+      font-family="Arial, sans-serif"
+      font-size="14"
+      font-weight="700">
+  0
+</text>
 
+<text x="60" y="280"
+      fill="#e2e8f0"
+      font-family="Arial, sans-serif"
+      font-size="15">
+  !
+</text>
 
-  <text x="60" y="280"
-        fill="#e2e8f0"
-        font-family="Arial, sans-serif"
-        font-size="15">
-    !
-  </text>
+<text x="90" y="280"
+      fill="#94a3b8"
+      font-family="Arial, sans-serif"
+      font-size="14">
+  Issues
+</text>
 
-  <text x="90" y="280"
-        fill="#94a3b8"
-        font-family="Arial, sans-serif"
-        font-size="14">
-    Issues
-  </text>
+<text x="285" y="280"
+      fill="#67e8f9"
+      font-family="Arial, sans-serif"
+      font-size="14"
+      font-weight="700">
+  0
+</text>
 
-  <text x="285" y="280"
-        fill="#67e8f9"
-        font-family="Arial, sans-serif"
-        font-size="14"
-        font-weight="700">
-    —
-  </text>
+<text x="60" y="315"
+      fill="#e2e8f0"
+      font-family="Arial, sans-serif"
+      font-size="15">
+  ▣
+</text>
 
+<text x="90" y="315"
+      fill="#94a3b8"
+      font-family="Arial, sans-serif"
+      font-size="14">
+  Public Repositories
+</text>
 
-  <text x="60" y="315"
-        fill="#e2e8f0"
-        font-family="Arial, sans-serif"
-        font-size="15">
-    ▣
-  </text>
+<text x="285" y="315"
+      fill="#67e8f9"
+      font-family="Arial, sans-serif"
+      font-size="14"
+      font-weight="700">
+  15
+</text>
 
-  <text x="90" y="315"
-        fill="#94a3b8"
-        font-family="Arial, sans-serif"
-        font-size="14">
-    Repositories
-  </text>
-
-  <text x="285" y="315"
-        fill="#67e8f9"
-        font-family="Arial, sans-serif"
-        font-size="14"
-        font-weight="700">
-    14+
-  </text>
-
-  <!-- Activity Ring -->
-  <circle cx="720" cy="190" r="65"
-          fill="none"
-          stroke="#25213b"
-          stroke-width="12"/>
-
-  <circle cx="720" cy="190" r="65"
-          fill="none"
-          stroke="url(#blue)"
-          stroke-width="12"
-          stroke-linecap="round"
-          stroke-dasharray="260 409"
-          transform="rotate(-90 720 190)"
-          filter="url(#glow)"/>
-
-  <text x="720" y="183"
-        text-anchor="middle"
-        fill="#22d3ee"
-        font-family="Arial, sans-serif"
-        font-size="18"
-        font-weight="700">
-    ACTIVITY
-  </text>
-
-  <text x="720" y="210"
-        text-anchor="middle"
-        fill="#a78bfa"
-        font-family="Arial, sans-serif"
-        font-size="22"
-        font-weight="700">
-    •
-  </text>
-
-  <!-- Graph container -->
-  <rect x="35" y="345" width="830" height="65" rx="10"
-        fill="#111827"
-        stroke="#312e81"
-        stroke-opacity="0.5"/>
-
-  <text x="450" y="367"
-        text-anchor="middle"
-        fill="#a78bfa"
-        font-family="Arial, sans-serif"
-        font-size="12"
-        font-weight="700">
-    CONTRIBUTION ACTIVITY
-  </text>
-
-  <!-- Fake contribution graph -->
-  <path d="M65 395
-           L105 395
-           L145 395
-           L185 388
-           L225 395
-           L265 395
-           L305 380
-           L345 395
-           L385 390
-           L425 395
-           L465 370
-           L505 395
-           L545 395
-           L585 385
-           L625 395
-           L665 375
-           L705 395
-           L745 382
-           L785 395
-           L825 390"
+<circle cx="720" cy="190" r="65"
         fill="none"
-        stroke="url(#purple)"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
+        stroke="#25213b"
+        stroke-width="12"/>
 
-  <!-- Graph dots -->
-  <g fill="#c084fc">
-    <circle cx="65" cy="395" r="3"/>
-    <circle cx="185" cy="388" r="3"/>
-    <circle cx="305" cy="380" r="3"/>
-    <circle cx="465" cy="370" r="3"/>
-    <circle cx="585" cy="385" r="3"/>
-    <circle cx="665" cy="375" r="3"/>
-    <circle cx="785" cy="395" r="3"/>
-  </g>
+<circle cx="720" cy="190" r="65"
+        fill="none"
+        stroke="url(#blue)"
+        stroke-width="12"
+        stroke-linecap="round"
+        stroke-dasharray="260 409"
+        transform="rotate(-90 720 190)"
+        filter="url(#glow)"/>
+
+<text x="720" y="183"
+      text-anchor="middle"
+      fill="#22d3ee"
+      font-family="Arial, sans-serif"
+      font-size="17"
+      font-weight="700">
+  CONTRIBUTIONS
+</text>
+
+<text x="720" y="210"
+      text-anchor="middle"
+      fill="#a78bfa"
+      font-family="Arial, sans-serif"
+      font-size="20"
+      font-weight="700">
+  85
+</text>
+
+<rect x="35" y="345" width="830" height="65"
+      rx="10"
+      fill="#111827"
+      stroke="#312e81"
+      stroke-opacity="0.5"/>
+
+<text x="450" y="367"
+      text-anchor="middle"
+      fill="#a78bfa"
+      font-family="Arial, sans-serif"
+      font-size="12"
+      font-weight="700">
+  CONTRIBUTION ACTIVITY — LAST 30 DAYS
+</text>
+
+<path d="M 65.0,395.0 L 91.6,395.0 L 118.1,395.0 L 144.7,395.0 L 171.2,395.0 L 197.8,395.0 L 224.3,395.0 L 250.9,383.9 L 277.4,386.7 L 304.0,395.0 L 330.5,395.0 L 357.1,395.0 L 383.6,395.0 L 410.2,395.0 L 436.7,392.2 L 463.3,392.2 L 489.8,395.0 L 516.4,392.2 L 542.9,389.4 L 569.5,370.0 L 596.0,395.0 L 622.6,395.0 L 649.1,395.0 L 675.7,395.0 L 702.2,395.0 L 728.8,395.0 L 755.3,395.0 L 781.9,389.4 L 808.4,395.0 L 835.0,375.6"
+      fill="none"
+      stroke="url(#purple)"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+
+<g fill="#c084fc">
+  <circle cx="65.0" cy="395.0" r="3"/>
+<circle cx="91.6" cy="395.0" r="3"/>
+<circle cx="118.1" cy="395.0" r="3"/>
+<circle cx="144.7" cy="395.0" r="3"/>
+<circle cx="171.2" cy="395.0" r="3"/>
+<circle cx="197.8" cy="395.0" r="3"/>
+<circle cx="224.3" cy="395.0" r="3"/>
+<circle cx="250.9" cy="383.9" r="3"/>
+<circle cx="277.4" cy="386.7" r="3"/>
+<circle cx="304.0" cy="395.0" r="3"/>
+<circle cx="330.5" cy="395.0" r="3"/>
+<circle cx="357.1" cy="395.0" r="3"/>
+<circle cx="383.6" cy="395.0" r="3"/>
+<circle cx="410.2" cy="395.0" r="3"/>
+<circle cx="436.7" cy="392.2" r="3"/>
+<circle cx="463.3" cy="392.2" r="3"/>
+<circle cx="489.8" cy="395.0" r="3"/>
+<circle cx="516.4" cy="392.2" r="3"/>
+<circle cx="542.9" cy="389.4" r="3"/>
+<circle cx="569.5" cy="370.0" r="3"/>
+<circle cx="596.0" cy="395.0" r="3"/>
+<circle cx="622.6" cy="395.0" r="3"/>
+<circle cx="649.1" cy="395.0" r="3"/>
+<circle cx="675.7" cy="395.0" r="3"/>
+<circle cx="702.2" cy="395.0" r="3"/>
+<circle cx="728.8" cy="395.0" r="3"/>
+<circle cx="755.3" cy="395.0" r="3"/>
+<circle cx="781.9" cy="389.4" r="3"/>
+<circle cx="808.4" cy="395.0" r="3"/>
+<circle cx="835.0" cy="375.6" r="3"/>
+</g>
 
 </svg>
