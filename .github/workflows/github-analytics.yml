@@ -1,0 +1,409 @@
+name: Update GitHub Analytics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update-analytics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate analytics SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ShoneYohannan
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          token = os.environ["GITHUB_TOKEN"]
+          username = os.environ["USERNAME"]
+
+          query = """
+          query($login: String!) {
+            user(login: $login) {
+              name
+              login
+
+              repositories(
+                first: 100
+                ownerAffiliations: OWNER
+                privacy: PUBLIC
+              ) {
+                totalCount
+                nodes {
+                  stargazerCount
+                }
+              }
+
+              contributionsCollection {
+                totalCommitContributions
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      contributionCount
+                      date
+                    }
+                  }
+                }
+              }
+
+              pullRequests(first: 1) {
+                totalCount
+              }
+
+              issues(first: 1) {
+                totalCount
+              }
+            }
+          }
+          """
+
+          payload = json.dumps({
+              "query": query,
+              "variables": {"login": username}
+          }).encode()
+
+          request = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=payload,
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Content-Type": "application/json",
+                  "User-Agent": "github-analytics"
+              }
+          )
+
+          with urllib.request.urlopen(request) as response:
+              data = json.loads(response.read())
+
+          if "errors" in data:
+              raise Exception(data["errors"])
+
+          user = data["data"]["user"]
+
+          repositories = user["repositories"]["nodes"]
+          repo_count = user["repositories"]["totalCount"]
+
+          stars = sum(repo["stargazerCount"] for repo in repositories)
+
+          commits = user["contributionsCollection"]["totalCommitContributions"]
+          contributions = user["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+
+          prs = user["pullRequests"]["totalCount"]
+          issues = user["issues"]["totalCount"]
+
+          # Contribution data
+          days = []
+
+          for week in user["contributionsCollection"]["contributionCalendar"]["weeks"]:
+              for day in week["contributionDays"]:
+                  days.append(day["contributionCount"])
+
+          # Keep the latest 30 days for the small graph
+          days = days[-30:]
+
+          if days:
+              max_value = max(days) or 1
+          else:
+              max_value = 1
+
+          points = []
+
+          start_x = 65
+          end_x = 835
+          graph_width = end_x - start_x
+
+          for i, value in enumerate(days):
+              if len(days) == 1:
+                  x = start_x
+              else:
+                  x = start_x + (graph_width * i / (len(days) - 1))
+
+              y = 395 - (value / max_value * 25)
+
+              points.append(f"{x:.1f},{y:.1f}")
+
+          graph_path = " ".join(
+              ("M " if i == 0 else "L ") + point
+              for i, point in enumerate(points)
+          )
+
+          dots = "\n".join(
+              f'<circle cx="{x}" cy="{y}" r="3"/>'
+              for x, y in (
+                  point.split(",")
+                  for point in [p for p in graph_path.replace("M ", "").replace("L ", "").split()]
+              )
+          )
+
+          svg = f'''<svg width="900" height="430" viewBox="0 0 900 430"
+          xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0f0b1f"/>
+              <stop offset="100%" stop-color="#17102d"/>
+            </linearGradient>
+
+            <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#a855f7"/>
+              <stop offset="100%" stop-color="#ec4899"/>
+            </linearGradient>
+
+            <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#60a5fa"/>
+              <stop offset="100%" stop-color="#a78bfa"/>
+            </linearGradient>
+
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+
+          </defs>
+
+          <rect width="900" height="430" rx="18" fill="url(#bg)"/>
+
+          <rect x="1" y="1" width="898" height="428" rx="17"
+                fill="none"
+                stroke="#8b5cf6"
+                stroke-opacity="0.45"/>
+
+          <text x="35" y="45"
+                fill="#f0abfc"
+                font-family="Arial, sans-serif"
+                font-size="25"
+                font-weight="700">
+            📊 GitHub Analytics
+          </text>
+
+          <line x1="35" y1="65" x2="865" y2="65"
+                stroke="#8b5cf6"
+                stroke-opacity="0.35"/>
+
+          <text x="55" y="105"
+                fill="#c084fc"
+                font-family="Arial, sans-serif"
+                font-size="20"
+                font-weight="700">
+            SHONE YOHANNAN
+          </text>
+
+          <text x="55" y="130"
+                fill="#94a3b8"
+                font-family="Arial, sans-serif"
+                font-size="13">
+            AI &amp; Data Science • Cloud • Full Stack
+          </text>
+
+          <text x="60" y="175"
+                fill="#e2e8f0"
+                font-family="Arial, sans-serif"
+                font-size="15">
+            ☆
+          </text>
+
+          <text x="90" y="175"
+                fill="#94a3b8"
+                font-family="Arial, sans-serif"
+                font-size="14">
+            Total Stars
+          </text>
+
+          <text x="285" y="175"
+                fill="#67e8f9"
+                font-family="Arial, sans-serif"
+                font-size="14"
+                font-weight="700">
+            {stars}
+          </text>
+
+          <text x="60" y="210"
+                fill="#e2e8f0"
+                font-family="Arial, sans-serif"
+                font-size="15">
+            ◷
+          </text>
+
+          <text x="90" y="210"
+                fill="#94a3b8"
+                font-family="Arial, sans-serif"
+                font-size="14">
+            Total Commits
+          </text>
+
+          <text x="285" y="210"
+                fill="#67e8f9"
+                font-family="Arial, sans-serif"
+                font-size="14"
+                font-weight="700">
+            {commits}
+          </text>
+
+          <text x="60" y="245"
+                fill="#e2e8f0"
+                font-family="Arial, sans-serif"
+                font-size="15">
+            ⑂
+          </text>
+
+          <text x="90" y="245"
+                fill="#94a3b8"
+                font-family="Arial, sans-serif"
+                font-size="14">
+            Pull Requests
+          </text>
+
+          <text x="285" y="245"
+                fill="#67e8f9"
+                font-family="Arial, sans-serif"
+                font-size="14"
+                font-weight="700">
+            {prs}
+          </text>
+
+          <text x="60" y="280"
+                fill="#e2e8f0"
+                font-family="Arial, sans-serif"
+                font-size="15">
+            !
+          </text>
+
+          <text x="90" y="280"
+                fill="#94a3b8"
+                font-family="Arial, sans-serif"
+                font-size="14">
+            Issues
+          </text>
+
+          <text x="285" y="280"
+                fill="#67e8f9"
+                font-family="Arial, sans-serif"
+                font-size="14"
+                font-weight="700">
+            {issues}
+          </text>
+
+          <text x="60" y="315"
+                fill="#e2e8f0"
+                font-family="Arial, sans-serif"
+                font-size="15">
+            ▣
+          </text>
+
+          <text x="90" y="315"
+                fill="#94a3b8"
+                font-family="Arial, sans-serif"
+                font-size="14">
+            Public Repositories
+          </text>
+
+          <text x="285" y="315"
+                fill="#67e8f9"
+                font-family="Arial, sans-serif"
+                font-size="14"
+                font-weight="700">
+            {repo_count}
+          </text>
+
+          <circle cx="720" cy="190" r="65"
+                  fill="none"
+                  stroke="#25213b"
+                  stroke-width="12"/>
+
+          <circle cx="720" cy="190" r="65"
+                  fill="none"
+                  stroke="url(#blue)"
+                  stroke-width="12"
+                  stroke-linecap="round"
+                  stroke-dasharray="260 409"
+                  transform="rotate(-90 720 190)"
+                  filter="url(#glow)"/>
+
+          <text x="720" y="183"
+                text-anchor="middle"
+                fill="#22d3ee"
+                font-family="Arial, sans-serif"
+                font-size="17"
+                font-weight="700">
+            CONTRIBUTIONS
+          </text>
+
+          <text x="720" y="210"
+                text-anchor="middle"
+                fill="#a78bfa"
+                font-family="Arial, sans-serif"
+                font-size="20"
+                font-weight="700">
+            {contributions}
+          </text>
+
+          <rect x="35" y="345" width="830" height="65"
+                rx="10"
+                fill="#111827"
+                stroke="#312e81"
+                stroke-opacity="0.5"/>
+
+          <text x="450" y="367"
+                text-anchor="middle"
+                fill="#a78bfa"
+                font-family="Arial, sans-serif"
+                font-size="12"
+                font-weight="700">
+            CONTRIBUTION ACTIVITY — LAST 30 DAYS
+          </text>
+
+          <path d="{graph_path}"
+                fill="none"
+                stroke="url(#purple)"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+
+          <g fill="#c084fc">
+            {dots}
+          </g>
+
+          </svg>
+          '''
+
+          os.makedirs("assets", exist_ok=True)
+
+          with open("assets/github-analytics.svg", "w", encoding="utf-8") as f:
+              f.write(svg)
+
+          print("Analytics updated!")
+          print("Stars:", stars)
+          print("Commits:", commits)
+          print("PRs:", prs)
+          print("Issues:", issues)
+          print("Repositories:", repo_count)
+          print("Contributions:", contributions)
+          PY
+
+      - name: Commit updated analytics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/github-analytics.svg
+
+          git diff --cached --quiet || git commit -m "Update GitHub analytics"
+
+          git push
