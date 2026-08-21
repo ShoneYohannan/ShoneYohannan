@@ -1,0 +1,256 @@
+<svg width="1000" height="400" viewBox="0 0 1000 400"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#080612"/>
+    <stop offset="50%" stop-color="#160b2d"/>
+    <stop offset="100%" stop-color="#090713"/>
+  </linearGradient>
+
+  <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#c084fc"/>
+    <stop offset="50%" stop-color="#60a5fa"/>
+    <stop offset="100%" stop-color="#f472b6"/>
+  </linearGradient>
+
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+</defs>
+
+<!-- Background -->
+
+<rect width="1000" height="400" rx="20" fill="url(#bg)"/>
+
+<!-- Border -->
+
+<rect x="2" y="2"
+width="996" height="396"
+rx="18"
+fill="none"
+stroke="#8b5cf6"
+stroke-opacity=".45"/>
+
+<!-- Grid -->
+
+<g stroke="#8b5cf6" stroke-opacity=".08">
+
+<line x1="50" y1="0" x2="50" y2="400"/>
+<line x1="100" y1="0" x2="100" y2="400"/>
+<line x1="150" y1="0" x2="150" y2="400"/>
+<line x1="200" y1="0" x2="200" y2="400"/>
+<line x1="250" y1="0" x2="250" y2="400"/>
+<line x1="300" y1="0" x2="300" y2="400"/>
+<line x1="350" y1="0" x2="350" y2="400"/>
+<line x1="400" y1="0" x2="400" y2="400"/>
+<line x1="450" y1="0" x2="450" y2="400"/>
+<line x1="500" y1="0" x2="500" y2="400"/>
+<line x1="550" y1="0" x2="550" y2="400"/>
+<line x1="600" y1="0" x2="600" y2="400"/>
+<line x1="650" y1="0" x2="650" y2="400"/>
+<line x1="700" y1="0" x2="700" y2="400"/>
+<line x1="750" y1="0" x2="750" y2="400"/>
+<line x1="800" y1="0" x2="800" y2="400"/>
+<line x1="850" y1="0" x2="850" y2="400"/>
+<line x1="900" y1="0" x2="900" y2="400"/>
+<line x1="950" y1="0" x2="950" y2="400"/>
+
+</g>
+
+<!-- Terminal -->
+
+<text x="60" y="65"
+fill="#22d3ee"
+font-family="monospace"
+font-size="16">
+
+$ ./initialize.sh
+
+</text>
+
+<!-- Cursor -->
+
+<rect x="225" y="50"
+width="10"
+height="20"
+fill="#22d3ee">
+
+<animate
+attributeName="opacity"
+values="1;0;1"
+dur="1s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- Main Name -->
+
+<text x="60" y="145"
+fill="url(#text)"
+font-family="Arial"
+font-size="58"
+font-weight="800"
+filter="url(#glow)">
+
+SHONE YOHANNAN
+
+</text>
+
+<!-- Subtitle -->
+
+<text x="64" y="185"
+fill="#cbd5e1"
+font-family="monospace"
+font-size="19">
+
+AI &amp; DATA SCIENCE ENGINEER
+
+</text>
+
+<!-- Roles -->
+
+<text x="65" y="225"
+fill="#94a3b8"
+font-family="monospace"
+font-size="15">
+
+AI  •  CLOUD  •  FULL STACK  •  DATA
+
+</text>
+
+<!-- Decorative circles -->
+
+<circle cx="800" cy="190"
+r="95"
+fill="none"
+stroke="#8b5cf6"
+stroke-opacity=".25"
+stroke-width="2"/>
+
+<circle cx="800" cy="190"
+r="70"
+fill="none"
+stroke="#ec4899"
+stroke-opacity=".25"
+stroke-width="2"/>
+
+<circle cx="800" cy="190"
+r="45"
+fill="none"
+stroke="#60a5fa"
+stroke-opacity=".3"
+stroke-width="2"/>
+
+<!-- Center -->
+
+<circle cx="800" cy="190"
+r="12"
+fill="#a855f7"
+filter="url(#glow)"/>
+
+<!-- Orbit -->
+
+<circle cx="800" cy="95"
+r="5"
+fill="#22d3ee">
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 800 190"
+to="360 800 190"
+dur="4s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Bottom -->
+
+<line x1="60" y1="270"
+x2="940" y2="270"
+stroke="#8b5cf6"
+stroke-opacity=".25"/>
+
+<text x="60" y="315"
+fill="#a78bfa"
+font-family="monospace"
+font-size="14">
+
+STATUS
+
+</text>
+
+<text x="125" y="315"
+fill="#22c55e"
+font-family="monospace"
+font-size="14">
+
+● ONLINE
+
+</text>
+
+<text x="250" y="315"
+fill="#a78bfa"
+font-family="monospace"
+font-size="14">
+
+LOCATION
+
+</text>
+
+<text x="335" y="315"
+fill="#cbd5e1"
+font-family="monospace"
+font-size="14">
+
+INDIA
+
+</text>
+
+<text x="450" y="315"
+fill="#a78bfa"
+font-family="monospace"
+font-size="14">
+
+FOCUS
+
+</text>
+
+<text x="510" y="315"
+fill="#cbd5e1"
+font-family="monospace"
+font-size="14">
+
+AI / CLOUD
+
+</text>
+
+<!-- Scan line -->
+
+<line x1="40" y1="20"
+x2="960" y2="20"
+stroke="#22d3ee"
+stroke-opacity=".5">
+
+<animate
+attributeName="y1"
+values="20;380;20"
+dur="5s"
+repeatCount="indefinite"/>
+
+<animate
+attributeName="y2"
+values="20;380;20"
+dur="5s"
+repeatCount="indefinite"/>
+
+</line>
+
+</svg>
