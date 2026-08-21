@@ -1,17 +1,6 @@
 <div align="center">
 
-# 👋 Hey, I'm Shone Yohannan
-
-### `AI & Data Science Student` · `Cloud Developer` · `Full-Stack Developer`
-
-<p>
-  <a href="https://github.com/ShoneYohannan">
-    <img src="https://img.shields.io/badge/GitHub-ShoneYohannan-181717?style=for-the-badge&logo=github" />
-  </a>
-  <a href="https://www.linkedin.com/in/shone-yohannan-9ba264291/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
-  </a>
-</p>
+<img src="./assets/hero.svg" width="100%" alt="Shone Yohannan">
 
 </div>
 
