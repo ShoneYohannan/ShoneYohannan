@@ -1,12 +1,10 @@
 <div align="center">
 
-<!-- ✨ Animated Banner ✨ -->
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./shone-banner.svg?v=1">
-  <source media="(prefers-color-scheme: light)" srcset="./shone-banner-light.svg?v=1">
+  <source media="(prefers-color-scheme: dark)" srcset="./shone-banner.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./shone-banner-light.svg?v=2">
   <img
-    src="./shone-banner.svg?v=1"
+    src="./shone-banner.svg?v=2"
     alt="Shone Yohannan — AI & Data Science Engineer"
     width="100%"
   />
