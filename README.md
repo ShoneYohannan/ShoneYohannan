@@ -1,7 +1,7 @@
 <div align="center">
 
 <img
-  src="./shone-banner.gif?v=3"
+  src="https://raw.githubusercontent.com/ShoneYohannan/ShoneYohannan/main/shone-banner.gif?v=4"
   alt="Shone Yohannan — AI & Data Science Engineer"
   width="100%"
 />
