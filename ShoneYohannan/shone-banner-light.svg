@@ -1,1 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1600 1000"
+     width="1600"
+     height="1000"
+     role="img"
+     aria-label="Shone Yohannan — AI and Data Science Engineer">
 
+  <defs>
+
+    <clipPath id="reveal">
+      <rect x="0" y="0" width="1600" height="0">
+        <animate
+          attributeName="height"
+          from="0"
+          to="1000"
+          dur="3.8s"
+          begin="0s"
+          fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <linearGradient id="scan"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="0">
+
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+
+  </defs>
+
+  <rect
+    width="1600"
+    height="1000"
+    rx="24"
+    fill="#eef2ff"/>
+
+  <image
+    href="./assets/shone-github-hero.png"
+    x="0"
+    y="0"
+    width="1600"
+    height="1000"
+    preserveAspectRatio="xMidYMid slice"
+    clip-path="url(#reveal)"
+  />
+
+  <rect
+    x="0"
+    y="-35"
+    width="1600"
+    height="70"
+    fill="url(#scan)"
+    opacity="0.6"
+    filter="url(#glow)">
+
+    <animate
+      attributeName="y"
+      from="0"
+      to="1000"
+      dur="3.8s"
+      begin="0s"
+      fill="freeze"/>
+
+  </rect>
+
+  <rect
+    x="0"
+    y="0"
+    width="1600"
+    height="3"
+    fill="#ffffff">
+
+    <animate
+      attributeName="y"
+      from="0"
+      to="997"
+      dur="3.8s"
+      begin="0s"
+      fill="freeze"/>
+
+  </rect>
+
+  <g
+    font-family="monospace"
+    fill="#4f46e5">
+
+    <text
+      x="55"
+      y="58"
+      font-size="22">
+
+      shone@github:~$ ./initialize.sh
+
+    </text>
+
+    <text
+      x="55"
+      y="88"
+      font-size="15">
+
+      LOADING PROFILE...
+
+    </text>
+
+    <animate
+      attributeName="opacity"
+      from="1"
+      to="0"
+      dur="0.7s"
+      begin="3.1s"
+      fill="freeze"/>
+
+  </g>
+
+  <rect
+    x="438"
+    y="37"
+    width="11"
+    height="24"
+    fill="#4f46e5">
+
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="0.75s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+  <rect
+    x="2"
+    y="2"
+    width="1596"
+    height="996"
+    rx="20"
+    fill="none"
+    stroke="#7c3aed"
+    stroke-opacity="0.4"/>
+
+</svg>
