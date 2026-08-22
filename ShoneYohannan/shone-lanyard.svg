@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 500 700"
+     width="500"
+     height="700">
+
+  <defs>
+
+    <linearGradient id="card"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
+      <stop offset="0%" stop-color="#15102a"/>
+      <stop offset="50%" stop-color="#241342"/>
+      <stop offset="100%" stop-color="#101827"/>
+
+    </linearGradient>
+
+    <linearGradient id="line"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="0">
+
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+  </defs>
+
+  <!-- Lanyard -->
+
+  <path
+    d="M250 0
+       C205 75 205 125 250 165
+       C295 125 295 75 250 0"
+    fill="none"
+    stroke="#8b5cf6"
+    stroke-width="14"
+    opacity="0.8"/>
+
+  <!-- ID Card group -->
+
+  <g>
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="-2 250 430;2 250 430;-1 250 430;0 250 430"
+      dur="5s"
+      repeatCount="indefinite"/>
+
+    <!-- Card -->
+
+    <rect
+      x="70"
+      y="165"
+      width="360"
+      height="420"
+      rx="28"
+      fill="url(#card)"
+      stroke="url(#line)"
+      stroke-width="3"/>
+
+    <!-- Top bar -->
+
+    <rect
+      x="70"
+      y="165"
+      width="360"
+      height="75"
+      rx="28"
+      fill="#0c0a19"/>
+
+    <text
+      x="100"
+      y="212"
+      fill="#67e8f9"
+      font-family="monospace"
+      font-size="18"
+      font-weight="700">
+
+      DEVELOPER ID
+
+    </text>
+
+    <!-- Avatar circle -->
+
+    <circle
+      cx="250"
+      cy="310"
+      r="72"
+      fill="#0b1020"
+      stroke="#8b5cf6"
+      stroke-width="4"/>
+
+    <text
+      x="250"
+      y="320"
+      text-anchor="middle"
+      fill="#c084fc"
+      font-family="Arial"
+      font-size="45"
+      font-weight="800">
+
+      SY
+
+    </text>
+
+    <!-- Name -->
+
+    <text
+      x="250"
+      y="420"
+      text-anchor="middle"
+      fill="#f5f3ff"
+      font-family="Arial"
+      font-size="25"
+      font-weight="800">
+
+      SHONE YOHANNAN
+
+    </text>
+
+    <text
+      x="250"
+      y="450"
+      text-anchor="middle"
+      fill="#a78bfa"
+      font-family="monospace"
+      font-size="14">
+
+      AI &amp; DATA SCIENCE
+
+    </text>
+
+    <!-- Details -->
+
+    <text
+      x="110"
+      y="495"
+      fill="#64748b"
+      font-family="monospace"
+      font-size="13">
+
+      LOCATION
+
+    </text>
+
+    <text
+      x="110"
+      y="518"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="15">
+
+      INDIA
+
+    </text>
+
+    <text
+      x="300"
+      y="495"
+      fill="#64748b"
+      font-family="monospace"
+      font-size="13">
+
+      STATUS
+
+    </text>
+
+    <text
+      x="300"
+      y="518"
+      fill="#22c55e"
+      font-family="monospace"
+      font-size="15">
+
+      ● ONLINE
+
+    </text>
+
+    <text
+      x="110"
+      y="555"
+      fill="#64748b"
+      font-family="monospace"
+      font-size="12">
+
+      AI • CLOUD • FULL STACK
+
+    </text>
+
+  </g>
+
+</svg>
