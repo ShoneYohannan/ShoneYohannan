@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 620 220"
+     width="620"
+     height="220">
+
+  <defs>
+
+    <linearGradient id="bg"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
+      <stop offset="0%" stop-color="#0f0b1f"/>
+      <stop offset="100%" stop-color="#17102d"/>
+
+    </linearGradient>
+
+  </defs>
+
+  <rect
+    width="620"
+    height="220"
+    rx="18"
+    fill="url(#bg)"/>
+
+  <rect
+    x="1"
+    y="1"
+    width="618"
+    height="218"
+    rx="17"
+    fill="none"
+    stroke="#22d3ee"
+    stroke-opacity=".35"/>
+
+  <text
+    x="30"
+    y="42"
+    fill="#67e8f9"
+    font-family="Arial"
+    font-size="22"
+    font-weight="700">
+
+    Technologies
+
+  </text>
+
+  <text x="30" y="78"
+        fill="#94a3b8"
+        font-family="monospace"
+        font-size="13">
+    PYTHON
+  </text>
+
+  <rect x="130" y="66" width="430" height="14" rx="7" fill="#20173b"/>
+  <rect x="130" y="66" width="300" height="14" rx="7" fill="#8b5cf6"/>
+
+  <text x="30" y="112"
+        fill="#94a3b8"
+        font-family="monospace"
+        font-size="13">
+    JAVASCRIPT
+  </text>
+
+  <rect x="130" y="100" width="430" height="14" rx="7" fill="#20173b"/>
+  <rect x="130" y="100" width="265" height="14" rx="7" fill="#22d3ee"/>
+
+  <text x="30" y="146"
+        fill="#94a3b8"
+        font-family="monospace"
+        font-size="13">
+    REACT
+  </text>
+
+  <rect x="130" y="134" width="430" height="14" rx="7" fill="#20173b"/>
+  <rect x="130" y="134" width="220" height="14" rx="7" fill="#60a5fa"/>
+
+  <text x="30" y="180"
+        fill="#94a3b8"
+        font-family="monospace"
+        font-size="13">
+    CLOUD / AWS
+  </text>
+
+  <rect x="130" y="168" width="430" height="14" rx="7" fill="#20173b"/>
+  <rect x="130" y="168" width="240" height="14" rx="7" fill="#ec4899"/>
+
+</svg>
