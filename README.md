@@ -1,14 +1,10 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./shone-banner.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="./shone-banner-light.svg?v=2">
-  <img
-    src="./shone-banner.svg?v=2"
-    alt="Shone Yohannan — AI & Data Science Engineer"
-    width="100%"
-  />
-</picture>
+<img
+  src="./shone-banner.gif?v=3"
+  alt="Shone Yohannan — AI & Data Science Engineer"
+  width="100%"
+/>
 
 </div>
 
