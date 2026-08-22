@@ -1,4 +1,10 @@
+<div align="center">
 
+<img src="./assets/shone-github-hero.png"
+     width="100%"
+     alt="Shone Yohannan GitHub Profile">
+
+</div>
 
 ---
 
