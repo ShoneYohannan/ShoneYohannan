@@ -1,10 +1,17 @@
 <div align="center">
 
-<img
-src="./shone-banner.svg?v=1"
-alt="Shone Yohannan — AI & Data Science Student"
-width="100%"
-/>
+# ⚙️ Build. Deploy. Improve. Repeat.
+
+### **Shone Yohannan**
+
+**B.Tech Artificial Intelligence & Data Science Student**
+`AI • Cloud • Full Stack • Data`
+
+<p>
+  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Cloud-8b5cf6?style=flat-square" />
+  <img src="https://img.shields.io/badge/Languages-Python%20%7C%20JavaScript%20%7C%20SQL-2563eb?style=flat-square" />
+  <img src="https://img.shields.io/badge/Location-Kochi%2C%20India-06b6d4?style=flat-square" />
+</p>
 
 </div>
 
@@ -12,142 +19,202 @@ width="100%"
 
 ## 👨‍💻 About Me
 
-Hi! I'm **Shone Yohannan**, a **B.Tech student in Artificial Intelligence and Data Science**.
+I'm **Shone Yohannan**, a **B.Tech Artificial Intelligence & Data Science student at Muthoot Institute of Technology and Science (KTU)**.
 
-I enjoy building practical applications using AI, data, cloud technologies, and full-stack development. I'm currently focused on improving my development skills through projects, experimentation, and continuous learning.
+I enjoy building practical systems that combine **AI, computer vision, full-stack development, and cloud deployment**, with a focus on solving real-world problems through software.
 
 ### 🔭 Current Focus
 
-* 🤖 Building AI-powered applications
-* ☁️ Exploring cloud development and AWS
-* 🌐 Building full-stack web applications
-* 📊 Working with data and machine learning
-* 🧩 Strengthening problem-solving and system design skills
+* 🤖 AI/ML and computer-vision applications
+* ☁️ Cloud development and AWS
+* 🌐 Full-stack application development
+* 🚀 Production deployment and backend engineering
+* 🧠 Generative AI and AI agent workflows
 
 ### 🌱 Currently Learning
 
 * Advanced Machine Learning
 * Cloud Engineering
-* Backend Development
+* AI Agents & Generative AI
 * System Design
 * Data Structures & Algorithms
-* AI application development
+* Production Deployment
 
-### 🎯 Goal
+### 🎯 Career Goal
 
-To become a strong **AI & Data Science professional** capable of building useful, reliable, and scalable applications.
-
-### ☕ Fun Fact
-
-I enjoy turning random ideas into working projects. 🚀
+To build strong expertise across **AI, cloud engineering, backend systems, and full-stack development**, and grow into a professional who can take ideas from development to deployment.
 
 ---
 
-## 🛠️ Tech Stack
+## 💼 Experience
+
+### Cloud Developer Intern — Siter Academy
+
+`July 2026 – August 2026`
+
+Worked on cloud deployment systems and real-time AI applications, including authentication, Docker-based deployment, AWS EC2, Nginx, PM2, and MongoDB-backed services. Also developed a CSRNet-based crowd-density monitoring system using PyTorch, OpenCV and FastAPI.
+
+---
+
+## 🛠️ Technical Skills
 
 ### Languages
 
-<p>
-<img src="https://skillicons.dev/icons?i=python,java,js" />
-</p>
+`Python` `JavaScript` `Java` `SQL` `C` `HTML`
 
-### Frontend
+### Frameworks & Backends
 
-<p>
-<img src="https://skillicons.dev/icons?i=react,vite,html,css" />
-</p>
+`React.js` `Node.js` `Express.js` `FastAPI` `LangChain` `LangGraph`
 
-### Backend
+### AI / Data Science
 
-<p>
-<img src="https://skillicons.dev/icons?i=nodejs,express,fastapi" />
-</p>
-
-### AI & Data Science
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,opencv" />
-</p>
-
-`NumPy` `Pandas` `scikit-learn` `Matplotlib`
+`PyTorch` `Scikit-learn` `OpenCV` `Pandas` `NumPy` `Matplotlib`
 
 ### Databases
 
-<p>
-<img src="https://skillicons.dev/icons?i=mongodb,mysql" />
-</p>
+`MongoDB` `MySQL`
 
-### Cloud & Tools
+### Cloud & DevOps
 
-<p>
-<img src="https://skillicons.dev/icons?i=aws,docker,linux,git,github,vscode" />
-</p>
+`AWS EC2` `Docker` `Nginx` `PM2` `Git` `JWT Authentication`
+
+### Core Areas
+
+`Computer Vision` `Generative AI` `AI Agents`
+`Real-time Systems` `Full-Stack Development` `Production Deployment`
 
 ---
 
 ## 🚀 Featured Projects
 
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### 🛡️ CrowdGuard AI
+
+**Real-Time Crowd Safety Monitoring System**
+
+CSRNet-based crowd-density monitoring system with zone-wise analysis, anomaly detection and emergency alerts.
+
+**Tech:** `Python` `PyTorch` `OpenCV` `FastAPI` `React`
+
+**Highlights**
+
+* 33–39 FPS on RTX 3050
+* Real-time Telegram alerts
+* Gaussian-kernel analysis
+* 12% improvement during density-estimation investigation
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🧳 Navora
+
+**AI-Powered Travel Planner**
+
+Personalized travel planner using preferences, budget, destination and trip duration.
+
+**Tech:** `Python` `FastAPI` `React` `LangGraph` `LangChain` `OpenAI`
+
+**Highlights**
+
+* Multi-step AI agent workflows
+* Personalized itinerary generation
+* MongoDB persistence
+* Real-time frontend/backend synchronization
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
 ### ☁️ CloudPilot
 
-A cloud-focused full-stack application exploring deployment, infrastructure, and cloud workflows.
+**Full-Stack Cloud Deployment Platform**
 
-**Tech:** Node.js · Express · MongoDB · AWS
+Platform for project management, deployment workflows, pipeline monitoring and deployment history.
 
-[View Project →](https://github.com/ShoneYohannan/Cloudpilot)
+**Tech:** `React` `Node.js` `MongoDB` `Docker` `AWS EC2`
 
-### 🧠 InsightIQ
+**Highlights**
 
-An AI-powered BI assistant designed to convert natural-language questions into SQL for analytics workflows.
+* JWT authentication
+* Multi-tenant workflows
+* Docker-based deployment
+* Nginx reverse proxy
+* PM2 process management
 
-**Tech:** Python · FastAPI · BigQuery · Gemini
+</td>
+
+<td width="50%" valign="top">
 
 ### 🧠 Emotion-Aware AI
 
-A facial emotion-recognition project using computer vision and deep learning.
+**Real-Time Facial Emotion Recognition**
 
-**Tech:** Python · OpenCV · Deep Learning
+Computer-vision project focused on real-time facial emotion recognition.
 
-[View Project →](https://github.com/ShoneYohannan/Emotion-Aware-Ai)
+**Tech:** `Python` `OpenCV` `Deep Learning`
 
-### 🩺 AI Doctor Voice Assistant
+</td>
 
-A voice-based AI project focused on conversational assistance.
-
-**Tech:** Python · AI · Voice
-
-[View Project →](https://github.com/ShoneYohannan/AI-Doctor-Voice-Assistant)
+</tr>
+</table>
 
 ---
 
-## 📈 GitHub Analytics
+## 🏆 Hackathons & Development
+
+### Smart India Hackathon — Smart Guard
+
+**ASIET & TCS**
+
+### Certifications & Training
+
+* **NPTEL Elite Track — Cloud Computing**
+* **NPTEL Elite Track — Python for Data Science**
+* **Full Stack Development — Zero Pixels Technologies**
+* **Complete Python Bootcamp — Udemy**
+* **MATLAB**
+* **Linguaskill English Proficiency — Cambridge English**
+* **Development Workshop — IEEE RAS**
+
+---
+
+## 🎓 Education
+
+**B.Tech Artificial Intelligence & Data Science**
+**Muthoot Institute of Technology and Science (KTU)**
+
+`September 2023 – May 2027`
+
+📍 Varikoli, Kochi
+📊 GPA: **7.07**
+📚 Elective: **Artificial Neural Networks**
+
+---
+
+## 📊 GitHub Activity
 
 <div align="center">
 
 <img
-src="./github-analytics.svg?v=1"
+src="https://github-readme-activity-graph.vercel.app/graph?username=ShoneYohannan&theme=github-compact&hide_border=true"
 width="95%"
-alt="GitHub Analytics"
+alt="Shone Yohannan GitHub Contribution Graph"
 />
 
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-<img
-src="./shone-trophies.svg?v=1"
-width="95%"
-alt="GitHub Trophies"
-/>
-
-</div>
-
----
-
-## 🌐 Connect With Me
+## 📫 Connect With Me
 
 <div align="center">
 
@@ -159,7 +226,7 @@ alt="GitHub Trophies"
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
-<a href="mailto:YOUR_EMAIL">
+<a href="mailto:shoneyohannan3@gmail.com">
 <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
@@ -167,12 +234,10 @@ alt="GitHub Trophies"
 
 ---
 
-## 💭 Developer Quote
-
 <div align="center">
 
-> **Building intelligent solutions, one project at a time.**
+### `AI • Cloud • Data • Full Stack`
+
+**Build. Deploy. Improve. Repeat.**
 
 </div>
-
-### `Always learning • Always building • Always improving`
