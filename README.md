@@ -1,10 +1,6 @@
 <div align="center">
 
-<img
-  src="./shone-banner.svg?v=3"
-  width="100%"
-  alt="Shone Yohannan — B.Tech AI & Data Science Student"
-/>
+<img src="./shone-banner.svg?v=4" width="100%">
 
 </div>
 
