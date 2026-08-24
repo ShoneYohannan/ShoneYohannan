@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="./shone-banner.svg?v=4" width="100%">
+<img
+  src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=34&duration=900&pause=250&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=false&width=1000&height=180&lines=%E2%9A%99+Build.+Deploy.+Improve.+Repeat.;Shone+Yohannan;B.Tech+Artificial+Intelligence+%26+Data+Science+Student;AI+%E2%80%A2+Cloud+%E2%80%A2+Full+Stack+%E2%80%A2+Data"
+  alt="Shone Yohannan typing introduction"
+/>
 
 </div>
 
