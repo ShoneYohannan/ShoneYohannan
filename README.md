@@ -1,11 +1,6 @@
-<div align="center">
-
-<img
-  src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=34&duration=800&pause=250&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=false&width=1100&height=190&lines=%E2%9A%99+Build.+Deploy.+Improve.+Repeat.;Shone+Yohannan;B.Tech+Artificial+Intelligence+%26+Data+Science+Student;AI+%E2%80%A2+Cloud+%E2%80%A2+Full+Stack+%E2%80%A2+Data"
-  alt="Shone Yohannan typing introduction"
-/>
-
-</div>
+<p align="center">
+  <img src="./shone-banner.svg" alt="Shone Yohannan Banner" width="100%">
+</p>
 ---
 
 ## 👨‍💻 About Me
