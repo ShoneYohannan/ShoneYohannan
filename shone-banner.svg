@@ -1,3 +1,4 @@
+```svg
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 1200 380"
      width="1200"
@@ -5,82 +6,92 @@
 
   <defs>
 
-    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="titleGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%">
+
       <stop offset="0%" stop-color="#e879f9"/>
       <stop offset="50%" stop-color="#a78bfa"/>
       <stop offset="100%" stop-color="#60a5fa"/>
+
     </linearGradient>
 
-    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="lineGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%">
+
       <stop offset="0%" stop-color="#8b5cf6"/>
       <stop offset="50%" stop-color="#c084fc"/>
       <stop offset="100%" stop-color="#60a5fa"/>
+
     </linearGradient>
 
-    <!-- Build. Deploy... typing -->
+    <!-- Build. Deploy. Improve. Repeat. -->
     <clipPath id="taglineClip">
       <rect x="170" y="55" width="0" height="60">
+
         <animate
           attributeName="width"
           from="0"
           to="860"
-          dur="2.7s"
+          dur="1.4s"
           begin="0.2s"
           fill="freeze"/>
+
       </rect>
     </clipPath>
 
-    <!-- Name typing -->
+    <!-- Name -->
     <clipPath id="nameClip">
       <rect x="300" y="125" width="0" height="80">
+
         <animate
           attributeName="width"
           from="0"
           to="600"
-          dur="2.4s"
-          begin="3s"
+          dur="1.3s"
+          begin="1.7s"
           fill="freeze"/>
+
       </rect>
     </clipPath>
 
-    <!-- Designation typing -->
+    <!-- Designation -->
     <clipPath id="roleClip">
       <rect x="170" y="205" width="0" height="55">
+
         <animate
           attributeName="width"
           from="0"
           to="860"
-          dur="2.7s"
-          begin="5.7s"
+          dur="1.3s"
+          begin="3.1s"
           fill="freeze"/>
+
       </rect>
     </clipPath>
 
-    <!-- Focus typing -->
+    <!-- Focus -->
     <clipPath id="focusClip">
       <rect x="380" y="265" width="0" height="40">
+
         <animate
           attributeName="width"
           from="0"
           to="450"
-          dur="1.8s"
-          begin="8.7s"
+          dur="1s"
+          begin="4.6s"
           fill="freeze"/>
+
       </rect>
     </clipPath>
 
-    <!-- Badges fade in -->
-    <g id="badges">
-      <animate
-        attributeName="opacity"
-        from="0"
-        to="1"
-        dur="1s"
-        begin="10.6s"
-        fill="freeze"/>
-    </g>
-
   </defs>
+
 
   <!-- Background -->
 
@@ -92,7 +103,8 @@
     rx="18"
     fill="#0b0b12"/>
 
-  <!-- Subtle glow -->
+
+  <!-- Background glow -->
 
   <circle
     cx="1080"
@@ -108,6 +120,7 @@
     fill="#ec4899"
     opacity="0.035"/>
 
+
   <!-- Top line -->
 
   <line
@@ -117,6 +130,7 @@
     y2="24"
     stroke="#8b5cf6"
     stroke-opacity="0.25"/>
+
 
   <!-- Terminal -->
 
@@ -142,7 +156,8 @@
 
   </text>
 
-  <!-- Blinking terminal cursor -->
+
+  <!-- Terminal cursor -->
 
   <rect
     x="365"
@@ -159,6 +174,7 @@
       repeatCount="indefinite"/>
 
   </rect>
+
 
   <!-- TAGLINE -->
 
@@ -178,6 +194,7 @@
 
   </g>
 
+
   <!-- NAME -->
 
   <g clip-path="url(#nameClip)">
@@ -196,6 +213,7 @@
 
   </g>
 
+
   <!-- NAME cursor -->
 
   <rect
@@ -208,11 +226,12 @@
     <animate
       attributeName="opacity"
       values="0;1;0"
-      dur="0.7s"
-      begin="3s"
+      dur="0.65s"
+      begin="1.7s"
       repeatCount="4"/>
 
   </rect>
+
 
   <!-- DESIGNATION -->
 
@@ -231,6 +250,7 @@
 
   </g>
 
+
   <!-- DESIGNATION cursor -->
 
   <rect
@@ -243,11 +263,12 @@
     <animate
       attributeName="opacity"
       values="0;1;0"
-      dur="0.75s"
-      begin="5.7s"
+      dur="0.65s"
+      begin="3.1s"
       repeatCount="5"/>
 
   </rect>
+
 
   <!-- FOCUS -->
 
@@ -266,11 +287,12 @@
 
   </g>
 
+
   <!-- BADGES -->
 
   <g opacity="0">
 
-    <!-- Focus badge -->
+    <!-- Focus -->
 
     <rect
       x="265"
@@ -311,7 +333,7 @@
     </text>
 
 
-    <!-- Languages badge -->
+    <!-- Languages -->
 
     <rect
       x="475"
@@ -352,7 +374,7 @@
     </text>
 
 
-    <!-- Location badge -->
+    <!-- Location -->
 
     <rect
       x="765"
@@ -392,15 +414,19 @@
 
     </text>
 
+
+    <!-- Fade in badges -->
+
     <animate
       attributeName="opacity"
       from="0"
       to="1"
-      dur="1s"
-      begin="10.6s"
+      dur="0.8s"
+      begin="5.8s"
       fill="freeze"/>
 
   </g>
+
 
   <!-- Bottom divider -->
 
@@ -413,3 +439,4 @@
     stroke-opacity="0.3"/>
 
 </svg>
+```
