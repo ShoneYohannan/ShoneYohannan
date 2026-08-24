@@ -1,14 +1,12 @@
 <div align="center">
 
 <img
-  src="./shone-banner.svg?v=2"
+  src="./shone-banner.svg?v=3"
   width="100%"
   alt="Shone Yohannan — B.Tech AI & Data Science Student"
 />
 
 </div>
-
-<br/>
 
 ---
 
