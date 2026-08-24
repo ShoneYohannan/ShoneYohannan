@@ -2,159 +2,152 @@
 
 <img
 src="./shone-banner.svg?v=1"
-alt="Shone Yohannan — AI & Data Science Engineer"
+alt="Shone Yohannan — AI & Data Science Student"
 width="100%"
 />
 
 </div>
 
-<br/>
+---
 
-## 🚀 About Me
+## 👨‍💻 About Me
 
-I'm a **B.Tech AI & Data Science student** interested in building practical solutions with **AI, cloud technologies, data, and full-stack development**.
+Hi! I'm **Shone Yohannan**, a **B.Tech student in Artificial Intelligence and Data Science**.
 
-🔭 Currently building projects across **AI, Cloud & Full Stack Development**
-🌱 Learning **cloud engineering, machine learning and system design**
-💡 Interested in building useful, scalable and reliable applications
-⚡ I enjoy turning ideas into working projects
+I enjoy building practical applications using AI, data, cloud technologies, and full-stack development. I'm currently focused on improving my development skills through projects, experimentation, and continuous learning.
+
+### 🔭 Current Focus
+
+* 🤖 Building AI-powered applications
+* ☁️ Exploring cloud development and AWS
+* 🌐 Building full-stack web applications
+* 📊 Working with data and machine learning
+* 🧩 Strengthening problem-solving and system design skills
+
+### 🌱 Currently Learning
+
+* Advanced Machine Learning
+* Cloud Engineering
+* Backend Development
+* System Design
+* Data Structures & Algorithms
+* AI application development
+
+### 🎯 Goal
+
+To become a strong **AI & Data Science professional** capable of building useful, reliable, and scalable applications.
+
+### ☕ Fun Fact
+
+I enjoy turning random ideas into working projects. 🚀
 
 ---
 
 ## 🛠️ Tech Stack
 
-<div align="center">
+### Languages
 
-<img src="https://skillicons.dev/icons?i=python,java,js,react,nodejs,fastapi,express,mongodb,mysql,aws,docker,linux,git,github,vscode" />
+<p>
+<img src="https://skillicons.dev/icons?i=python,java,js" />
+</p>
 
-</div>
+### Frontend
+
+<p>
+<img src="https://skillicons.dev/icons?i=react,vite,html,css" />
+</p>
+
+### Backend
+
+<p>
+<img src="https://skillicons.dev/icons?i=nodejs,express,fastapi" />
+</p>
+
+### AI & Data Science
+
+<p>
+<img src="https://skillicons.dev/icons?i=python,opencv" />
+</p>
+
+`NumPy` `Pandas` `scikit-learn` `Matplotlib`
+
+### Databases
+
+<p>
+<img src="https://skillicons.dev/icons?i=mongodb,mysql" />
+</p>
+
+### Cloud & Tools
+
+<p>
+<img src="https://skillicons.dev/icons?i=aws,docker,linux,git,github,vscode" />
+</p>
 
 ---
 
 ## 🚀 Featured Projects
 
-<table align="center">
-
-<tr>
-
-<td width="50%" valign="top">
-
 ### ☁️ CloudPilot
 
-Cloud-focused full-stack project exploring deployment, infrastructure and cloud workflows.
+A cloud-focused full-stack application exploring deployment, infrastructure, and cloud workflows.
 
-**Tech:** `Node.js` `Express` `MongoDB` `AWS`
+**Tech:** Node.js · Express · MongoDB · AWS
 
-<a href="https://github.com/ShoneYohannan/Cloudpilot">
-View Project →
-</a>
-
-</td>
-
-<td width="50%" valign="top">
+[View Project →](https://github.com/ShoneYohannan/Cloudpilot)
 
 ### 🧠 InsightIQ
 
-AI-powered BI assistant designed to convert natural-language questions into SQL for analytics.
+An AI-powered BI assistant designed to convert natural-language questions into SQL for analytics workflows.
 
-**Tech:** `Python` `FastAPI` `BigQuery` `Gemini`
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" valign="top">
+**Tech:** Python · FastAPI · BigQuery · Gemini
 
 ### 🧠 Emotion-Aware AI
 
-Real-time facial emotion recognition using computer vision and deep learning.
+A facial emotion-recognition project using computer vision and deep learning.
 
-**Tech:** `Python` `OpenCV` `Deep Learning`
+**Tech:** Python · OpenCV · Deep Learning
 
-<a href="https://github.com/ShoneYohannan/Emotion-Aware-Ai">
-View Project →
-</a>
-
-</td>
-
-<td width="50%" valign="top">
+[View Project →](https://github.com/ShoneYohannan/Emotion-Aware-Ai)
 
 ### 🩺 AI Doctor Voice Assistant
 
-Voice-based AI project focused on intelligent conversational assistance.
+A voice-based AI project focused on conversational assistance.
 
-**Tech:** `Python` `AI` `Voice`
+**Tech:** Python · AI · Voice
 
-<a href="https://github.com/ShoneYohannan/AI-Doctor-Voice-Assistant">
-View Project →
-</a>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" valign="top">
-
-### 🧭 Navora
-
-Modern JavaScript web application focused on a clean and interactive user experience.
-
-**Tech:** `JavaScript`
-
-<a href="https://github.com/ShoneYohannan/Navora">
-View Project →
-</a>
-
-</td>
-
-<td width="50%" valign="top">
-
-### 🛡️ CrowdGuard
-
-Application focused on crowd-management and safety-oriented functionality.
-
-**Tech:** `JavaScript`
-
-<a href="https://github.com/ShoneYohannan/CrowdGuard">
-View Project →
-</a>
-
-</td>
-
-</tr>
-
-</table>
+[View Project →](https://github.com/ShoneYohannan/AI-Doctor-Voice-Assistant)
 
 ---
 
-## 📚 Currently Learning
-
-```text
-Machine Learning
-Cloud Engineering
-System Design
-Data Structures & Algorithms
-Backend Development
-DevOps & AWS
-```
-
----
-
-## 📈 GitHub Activity
+## 📈 GitHub Analytics
 
 <div align="center">
 
-![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=ShoneYohannan\&theme=github-compact\&hide_border=true)
+<img
+src="./github-analytics.svg?v=1"
+width="95%"
+alt="GitHub Analytics"
+/>
 
 </div>
 
 ---
 
-## 📫 Connect With Me
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+<img
+src="./shone-trophies.svg?v=1"
+width="95%"
+alt="GitHub Trophies"
+/>
+
+</div>
+
+---
+
+## 🌐 Connect With Me
 
 <div align="center">
 
@@ -172,12 +165,14 @@ DevOps & AWS
 
 </div>
 
-<br/>
+---
+
+## 💭 Developer Quote
 
 <div align="center">
 
-`Building • Learning • Experimenting`
-
-⭐ Always learning, always building.
+> **Building intelligent solutions, one project at a time.**
 
 </div>
+
+### `Always learning • Always building • Always improving`
