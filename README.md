@@ -155,36 +155,6 @@ Computer-vision project focused on real-time facial emotion recognition.
 
 ---
 
-## 🏆 Hackathons & Development
-
-### Smart India Hackathon — Smart Guard
-
-**ASIET & TCS**
-
-### Certifications & Training
-
-* **NPTEL Elite Track — Cloud Computing**
-* **NPTEL Elite Track — Python for Data Science**
-* **Full Stack Development — Zero Pixels Technologies**
-* **Complete Python Bootcamp — Udemy**
-* **MATLAB**
-* **Linguaskill English Proficiency — Cambridge English**
-* **Development Workshop — IEEE RAS**
-
----
-
-## 🎓 Education
-
-**B.Tech Artificial Intelligence & Data Science**
-**Muthoot Institute of Technology and Science (KTU)**
-
-`September 2023 – May 2027`
-
-📍 Varikoli, Kochi
-📊 GPA: **7.07**
-📚 Elective: **Artificial Neural Networks**
-
----
 
 ## 📊 GitHub Activity
 
@@ -208,7 +178,7 @@ alt="Shone Yohannan GitHub Contribution Graph"
 <img src="https://img.shields.io/badge/GitHub-ShoneYohannan-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
-<a href="YOUR_LINKEDIN_URL">
+<a href="https://www.linkedin.com/in/shone-yohannan-9ba264291/">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
