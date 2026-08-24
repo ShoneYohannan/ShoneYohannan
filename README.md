@@ -1,19 +1,14 @@
 <div align="center">
 
-# ⚙️ Build. Deploy. Improve. Repeat.
-
-### **Shone Yohannan**
-
-**B.Tech Artificial Intelligence & Data Science Student**
-`AI • Cloud • Full Stack • Data`
-
-<p>
-  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Cloud-8b5cf6?style=flat-square" />
-  <img src="https://img.shields.io/badge/Languages-Python%20%7C%20JavaScript%20%7C%20SQL-2563eb?style=flat-square" />
-  <img src="https://img.shields.io/badge/Location-Kochi%2C%20India-06b6d4?style=flat-square" />
-</p>
+<img
+  src="./shone-banner.svg?v=2"
+  width="100%"
+  alt="Shone Yohannan — B.Tech AI & Data Science Student"
+/>
 
 </div>
+
+<br/>
 
 ---
 
