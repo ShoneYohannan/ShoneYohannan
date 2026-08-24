@@ -1,132 +1,193 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1200 360"
+     viewBox="0 0 1200 380"
      width="1200"
-     height="360">
+     height="380">
 
   <defs>
 
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8b5cf6"/>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e879f9"/>
       <stop offset="50%" stop-color="#a78bfa"/>
       <stop offset="100%" stop-color="#60a5fa"/>
     </linearGradient>
 
-    <clipPath id="nameReveal">
-      <rect x="70" y="0" width="0" height="90">
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+
+    <!-- Build. Deploy... typing -->
+    <clipPath id="taglineClip">
+      <rect x="170" y="55" width="0" height="60">
         <animate
           attributeName="width"
           from="0"
-          to="760"
+          to="860"
           dur="2.7s"
-          begin="1s"
+          begin="0.2s"
           fill="freeze"/>
       </rect>
     </clipPath>
 
-    <clipPath id="roleReveal">
-      <rect x="72" y="0" width="0" height="50">
+    <!-- Name typing -->
+    <clipPath id="nameClip">
+      <rect x="300" y="125" width="0" height="80">
         <animate
           attributeName="width"
           from="0"
-          to="720"
-          dur="2.5s"
-          begin="3.7s"
+          to="600"
+          dur="2.4s"
+          begin="3s"
           fill="freeze"/>
       </rect>
     </clipPath>
 
-    <clipPath id="focusReveal">
-      <rect x="72" y="0" width="0" height="40">
+    <!-- Designation typing -->
+    <clipPath id="roleClip">
+      <rect x="170" y="205" width="0" height="55">
         <animate
           attributeName="width"
           from="0"
-          to="520"
-          dur="2s"
-          begin="6.3s"
+          to="860"
+          dur="2.7s"
+          begin="5.7s"
           fill="freeze"/>
       </rect>
     </clipPath>
+
+    <!-- Focus typing -->
+    <clipPath id="focusClip">
+      <rect x="380" y="265" width="0" height="40">
+        <animate
+          attributeName="width"
+          from="0"
+          to="450"
+          dur="1.8s"
+          begin="8.7s"
+          fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- Badges fade in -->
+    <g id="badges">
+      <animate
+        attributeName="opacity"
+        from="0"
+        to="1"
+        dur="1s"
+        begin="10.6s"
+        fill="freeze"/>
+    </g>
 
   </defs>
 
   <!-- Background -->
+
   <rect
+    x="0"
+    y="0"
     width="1200"
-    height="360"
-    rx="20"
+    height="380"
+    rx="18"
     fill="#0b0b12"/>
 
-  <!-- Subtle background glow -->
+  <!-- Subtle glow -->
+
   <circle
-    cx="1030"
-    cy="90"
-    r="150"
+    cx="1080"
+    cy="70"
+    r="120"
     fill="#8b5cf6"
-    opacity=".05"/>
+    opacity="0.06"/>
 
   <circle
-    cx="160"
-    cy="300"
-    r="130"
-    fill="#60a5fa"
-    opacity=".04"/>
+    cx="120"
+    cy="330"
+    r="150"
+    fill="#ec4899"
+    opacity="0.035"/>
 
-  <!-- Terminal prompt -->
+  <!-- Top line -->
+
+  <line
+    x1="60"
+    y1="24"
+    x2="1140"
+    y2="24"
+    stroke="#8b5cf6"
+    stroke-opacity="0.25"/>
+
+  <!-- Terminal -->
+
   <text
     x="70"
-    y="55"
+    y="48"
     fill="#22c55e"
     font-family="monospace"
-    font-size="17">
+    font-size="16">
+
     shone@github:~$
+
   </text>
 
   <text
-    x="235"
-    y="55"
+    x="220"
+    y="48"
     fill="#67e8f9"
     font-family="monospace"
-    font-size="17">
-    whoami
+    font-size="16">
+
+    ./initialize.sh
+
   </text>
 
-  <!-- Terminal cursor -->
+  <!-- Blinking terminal cursor -->
+
   <rect
-    x="310"
-    y="39"
-    width="10"
-    height="22"
+    x="365"
+    y="32"
+    width="9"
+    height="20"
+    rx="1"
     fill="#67e8f9">
 
     <animate
       attributeName="opacity"
       values="1;0;1"
-      dur=".8s"
+      dur="0.75s"
       repeatCount="indefinite"/>
 
   </rect>
 
-  <!-- Tagline -->
-  <text
-    x="70"
-    y="105"
-    fill="#e2e8f0"
-    font-family="Arial, sans-serif"
-    font-size="20">
+  <!-- TAGLINE -->
 
-    ⚙ Build. Deploy. Improve. Repeat.
-
-  </text>
-
-  <!-- NAME -->
-  <g clip-path="url(#nameReveal)">
+  <g clip-path="url(#taglineClip)">
 
     <text
-      x="70"
-      y="190"
-      fill="url(#accent)"
+      x="170"
+      y="100"
+      fill="#f1f5f9"
       font-family="Arial, sans-serif"
-      font-size="72"
+      font-size="34"
+      font-weight="700">
+
+      ⚙ Build. Deploy. Improve. Repeat.
+
+    </text>
+
+  </g>
+
+  <!-- NAME -->
+
+  <g clip-path="url(#nameClip)">
+
+    <text
+      x="300"
+      y="185"
+      fill="url(#titleGradient)"
+      font-family="Arial, sans-serif"
+      font-size="66"
       font-weight="800">
 
       SHONE YOHANNAN
@@ -136,31 +197,33 @@
   </g>
 
   <!-- NAME cursor -->
+
   <rect
-    x="845"
-    y="135"
+    x="900"
+    y="132"
     width="7"
-    height="65"
-    fill="#a78bfa">
+    height="60"
+    fill="#c084fc">
 
     <animate
       attributeName="opacity"
       values="0;1;0"
-      dur=".7s"
-      begin="1s"
+      dur="0.7s"
+      begin="3s"
       repeatCount="4"/>
 
   </rect>
 
   <!-- DESIGNATION -->
-  <g clip-path="url(#roleReveal)">
+
+  <g clip-path="url(#roleClip)">
 
     <text
-      x="72"
+      x="170"
       y="245"
-      fill="#c084fc"
+      fill="#f1f5f9"
       font-family="monospace"
-      font-size="25">
+      font-size="24">
 
       B.Tech Artificial Intelligence &amp; Data Science Student
 
@@ -169,8 +232,9 @@
   </g>
 
   <!-- DESIGNATION cursor -->
+
   <rect
-    x="795"
+    x="870"
     y="220"
     width="7"
     height="30"
@@ -179,35 +243,173 @@
     <animate
       attributeName="opacity"
       values="0;1;0"
-      dur=".75s"
-      begin="3.7s"
+      dur="0.75s"
+      begin="5.7s"
       repeatCount="5"/>
 
   </rect>
 
-  <!-- Focus -->
-  <g clip-path="url(#focusReveal)">
+  <!-- FOCUS -->
+
+  <g clip-path="url(#focusClip)">
 
     <text
-      x="72"
-      y="292"
+      x="380"
+      y="298"
       fill="#94a3b8"
       font-family="monospace"
       font-size="17">
 
-      AI • CLOUD • FULL STACK • DATA
+      AI • Cloud • Full Stack • Data
 
     </text>
 
   </g>
 
+  <!-- BADGES -->
+
+  <g opacity="0">
+
+    <!-- Focus badge -->
+
+    <rect
+      x="265"
+      y="320"
+      width="190"
+      height="32"
+      rx="6"
+      fill="#303030"/>
+
+    <text
+      x="280"
+      y="341"
+      fill="#ffffff"
+      font-family="Arial"
+      font-size="14">
+
+      Focus
+
+    </text>
+
+    <rect
+      x="335"
+      y="320"
+      width="120"
+      height="32"
+      rx="6"
+      fill="#8b5cf6"/>
+
+    <text
+      x="348"
+      y="341"
+      fill="#ffffff"
+      font-family="Arial"
+      font-size="14">
+
+      AI &amp; Cloud
+
+    </text>
+
+
+    <!-- Languages badge -->
+
+    <rect
+      x="475"
+      y="320"
+      width="270"
+      height="32"
+      rx="6"
+      fill="#303030"/>
+
+    <text
+      x="490"
+      y="341"
+      fill="#ffffff"
+      font-family="Arial"
+      font-size="14">
+
+      Languages
+
+    </text>
+
+    <rect
+      x="555"
+      y="320"
+      width="190"
+      height="32"
+      rx="6"
+      fill="#2563eb"/>
+
+    <text
+      x="566"
+      y="341"
+      fill="#ffffff"
+      font-family="Arial"
+      font-size="14">
+
+      Python | JavaScript | SQL
+
+    </text>
+
+
+    <!-- Location badge -->
+
+    <rect
+      x="765"
+      y="320"
+      width="170"
+      height="32"
+      rx="6"
+      fill="#303030"/>
+
+    <text
+      x="778"
+      y="341"
+      fill="#ffffff"
+      font-family="Arial"
+      font-size="14">
+
+      Location
+
+    </text>
+
+    <rect
+      x="832"
+      y="320"
+      width="103"
+      height="32"
+      rx="6"
+      fill="#06b6d4"/>
+
+    <text
+      x="844"
+      y="341"
+      fill="#ffffff"
+      font-family="Arial"
+      font-size="14">
+
+      Kochi, India
+
+    </text>
+
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      dur="1s"
+      begin="10.6s"
+      fill="freeze"/>
+
+  </g>
+
   <!-- Bottom divider -->
+
   <line
-    x1="70"
-    y1="325"
-    x2="1130"
-    y2="325"
-    stroke="url(#accent)"
-    stroke-opacity=".3"/>
+    x1="60"
+    y1="365"
+    x2="1140"
+    y2="365"
+    stroke="url(#lineGradient)"
+    stroke-opacity="0.3"/>
 
 </svg>
