@@ -1,442 +1,185 @@
-```svg
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1200 380"
+     viewBox="0 0 1200 340"
      width="1200"
-     height="380">
+     height="340">
 
   <defs>
-
-    <linearGradient id="titleGradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="0%">
-
+    <linearGradient id="name" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#e879f9"/>
       <stop offset="50%" stop-color="#a78bfa"/>
       <stop offset="100%" stop-color="#60a5fa"/>
-
     </linearGradient>
 
-    <linearGradient id="lineGradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="0%">
-
-      <stop offset="0%" stop-color="#8b5cf6"/>
-      <stop offset="50%" stop-color="#c084fc"/>
-      <stop offset="100%" stop-color="#60a5fa"/>
-
-    </linearGradient>
-
-    <!-- Build. Deploy. Improve. Repeat. -->
-    <clipPath id="taglineClip">
-      <rect x="170" y="55" width="0" height="60">
-
+    <clipPath id="revealTag">
+      <rect x="60" y="70" width="0" height="55">
         <animate
           attributeName="width"
           from="0"
-          to="860"
+          to="700"
           dur="1.4s"
-          begin="0.2s"
+          begin="0s"
           fill="freeze"/>
-
       </rect>
     </clipPath>
 
-    <!-- Name -->
-    <clipPath id="nameClip">
-      <rect x="300" y="125" width="0" height="80">
-
+    <clipPath id="revealName">
+      <rect x="60" y="115" width="0" height="75">
         <animate
           attributeName="width"
           from="0"
-          to="600"
+          to="700"
           dur="1.3s"
-          begin="1.7s"
+          begin="1.5s"
           fill="freeze"/>
-
       </rect>
     </clipPath>
 
-    <!-- Designation -->
-    <clipPath id="roleClip">
-      <rect x="170" y="205" width="0" height="55">
-
+    <clipPath id="revealRole">
+      <rect x="60" y="190" width="0" height="45">
         <animate
           attributeName="width"
           from="0"
-          to="860"
+          to="760"
           dur="1.3s"
-          begin="3.1s"
+          begin="2.9s"
           fill="freeze"/>
-
       </rect>
     </clipPath>
 
-    <!-- Focus -->
-    <clipPath id="focusClip">
-      <rect x="380" y="265" width="0" height="40">
-
+    <clipPath id="revealFocus">
+      <rect x="60" y="235" width="0" height="40">
         <animate
           attributeName="width"
           from="0"
           to="450"
           dur="1s"
-          begin="4.6s"
+          begin="4.3s"
           fill="freeze"/>
-
       </rect>
     </clipPath>
-
   </defs>
 
-
   <!-- Background -->
+  <rect width="1200" height="340" rx="18" fill="#0b0b12"/>
 
-  <rect
-    x="0"
-    y="0"
-    width="1200"
-    height="380"
-    rx="18"
-    fill="#0b0b12"/>
-
-
-  <!-- Background glow -->
-
-  <circle
-    cx="1080"
-    cy="70"
-    r="120"
-    fill="#8b5cf6"
-    opacity="0.06"/>
-
-  <circle
-    cx="120"
-    cy="330"
-    r="150"
-    fill="#ec4899"
-    opacity="0.035"/>
-
-
-  <!-- Top line -->
-
-  <line
-    x1="60"
-    y1="24"
-    x2="1140"
-    y2="24"
-    stroke="#8b5cf6"
-    stroke-opacity="0.25"/>
-
+  <!-- Decorative glow -->
+  <circle cx="1050" cy="80" r="130" fill="#8b5cf6" opacity="0.06"/>
+  <circle cx="150" cy="300" r="130" fill="#ec4899" opacity="0.04"/>
 
   <!-- Terminal -->
-
   <text
-    x="70"
-    y="48"
+    x="60"
+    y="42"
     fill="#22c55e"
     font-family="monospace"
     font-size="16">
-
     shone@github:~$
-
   </text>
 
   <text
-    x="220"
-    y="48"
+    x="210"
+    y="42"
     fill="#67e8f9"
     font-family="monospace"
     font-size="16">
-
     ./initialize.sh
-
   </text>
 
-
-  <!-- Terminal cursor -->
-
+  <!-- Blinking cursor -->
   <rect
-    x="365"
-    y="32"
+    x="360"
+    y="28"
     width="9"
     height="20"
-    rx="1"
     fill="#67e8f9">
-
     <animate
       attributeName="opacity"
       values="1;0;1"
       dur="0.75s"
       repeatCount="indefinite"/>
-
   </rect>
 
-
-  <!-- TAGLINE -->
-
-  <g clip-path="url(#taglineClip)">
-
+  <!-- Tagline -->
+  <g clip-path="url(#revealTag)">
     <text
-      x="170"
-      y="100"
+      x="60"
+      y="108"
       fill="#f1f5f9"
       font-family="Arial, sans-serif"
       font-size="34"
       font-weight="700">
-
-      ⚙ Build. Deploy. Improve. Repeat.
-
+      Build. Deploy. Improve. Repeat.
     </text>
-
   </g>
 
-
-  <!-- NAME -->
-
-  <g clip-path="url(#nameClip)">
-
+  <!-- Name -->
+  <g clip-path="url(#revealName)">
     <text
-      x="300"
-      y="185"
-      fill="url(#titleGradient)"
+      x="60"
+      y="175"
+      fill="url(#name)"
       font-family="Arial, sans-serif"
-      font-size="66"
+      font-size="62"
       font-weight="800">
-
       SHONE YOHANNAN
-
     </text>
-
   </g>
 
-
-  <!-- NAME cursor -->
-
+  <!-- Name cursor -->
   <rect
-    x="900"
-    y="132"
-    width="7"
-    height="60"
+    x="700"
+    y="125"
+    width="6"
+    height="58"
     fill="#c084fc">
-
     <animate
       attributeName="opacity"
       values="0;1;0"
       dur="0.65s"
-      begin="1.7s"
+      begin="1.5s"
       repeatCount="4"/>
-
   </rect>
 
-
-  <!-- DESIGNATION -->
-
-  <g clip-path="url(#roleClip)">
-
+  <!-- Designation -->
+  <g clip-path="url(#revealRole)">
     <text
-      x="170"
-      y="245"
-      fill="#f1f5f9"
+      x="60"
+      y="222"
+      fill="#e2e8f0"
       font-family="monospace"
-      font-size="24">
-
+      font-size="23">
       B.Tech Artificial Intelligence &amp; Data Science Student
-
     </text>
-
   </g>
 
-
-  <!-- DESIGNATION cursor -->
-
-  <rect
-    x="870"
-    y="220"
-    width="7"
-    height="30"
-    fill="#67e8f9">
-
-    <animate
-      attributeName="opacity"
-      values="0;1;0"
-      dur="0.65s"
-      begin="3.1s"
-      repeatCount="5"/>
-
-  </rect>
-
-
-  <!-- FOCUS -->
-
-  <g clip-path="url(#focusClip)">
-
+  <!-- Focus -->
+  <g clip-path="url(#revealFocus)">
     <text
-      x="380"
-      y="298"
+      x="60"
+      y="268"
       fill="#94a3b8"
       font-family="monospace"
       font-size="17">
-
       AI • Cloud • Full Stack • Data
-
     </text>
-
   </g>
 
-
-  <!-- BADGES -->
-
-  <g opacity="0">
-
-    <!-- Focus -->
-
-    <rect
-      x="265"
-      y="320"
-      width="190"
-      height="32"
-      rx="6"
-      fill="#303030"/>
-
-    <text
-      x="280"
-      y="341"
-      fill="#ffffff"
-      font-family="Arial"
-      font-size="14">
-
-      Focus
-
-    </text>
-
-    <rect
-      x="335"
-      y="320"
-      width="120"
-      height="32"
-      rx="6"
-      fill="#8b5cf6"/>
-
-    <text
-      x="348"
-      y="341"
-      fill="#ffffff"
-      font-family="Arial"
-      font-size="14">
-
-      AI &amp; Cloud
-
-    </text>
-
-
-    <!-- Languages -->
-
-    <rect
-      x="475"
-      y="320"
-      width="270"
-      height="32"
-      rx="6"
-      fill="#303030"/>
-
-    <text
-      x="490"
-      y="341"
-      fill="#ffffff"
-      font-family="Arial"
-      font-size="14">
-
-      Languages
-
-    </text>
-
-    <rect
-      x="555"
-      y="320"
-      width="190"
-      height="32"
-      rx="6"
-      fill="#2563eb"/>
-
-    <text
-      x="566"
-      y="341"
-      fill="#ffffff"
-      font-family="Arial"
-      font-size="14">
-
-      Python | JavaScript | SQL
-
-    </text>
-
-
-    <!-- Location -->
-
-    <rect
-      x="765"
-      y="320"
-      width="170"
-      height="32"
-      rx="6"
-      fill="#303030"/>
-
-    <text
-      x="778"
-      y="341"
-      fill="#ffffff"
-      font-family="Arial"
-      font-size="14">
-
-      Location
-
-    </text>
-
-    <rect
-      x="832"
-      y="320"
-      width="103"
-      height="32"
-      rx="6"
-      fill="#06b6d4"/>
-
-    <text
-      x="844"
-      y="341"
-      fill="#ffffff"
-      font-family="Arial"
-      font-size="14">
-
-      Kochi, India
-
-    </text>
-
-
-    <!-- Fade in badges -->
-
-    <animate
-      attributeName="opacity"
-      from="0"
-      to="1"
-      dur="0.8s"
-      begin="5.8s"
-      fill="freeze"/>
-
-  </g>
-
-
-  <!-- Bottom divider -->
-
+  <!-- Bottom line -->
   <line
     x1="60"
-    y1="365"
+    y1="305"
     x2="1140"
-    y2="365"
-    stroke="url(#lineGradient)"
+    y2="305"
+    stroke="#8b5cf6"
     stroke-opacity="0.3"/>
 
+  <text
+    x="60"
+    y="325"
+    fill="#64748b"
+    font-family="monospace"
+    font-size="12">
+    shone@github • building • learning • experimenting
+  </text>
+
 </svg>
-```
