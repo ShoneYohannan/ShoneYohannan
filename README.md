@@ -160,11 +160,7 @@ Computer-vision project focused on real-time facial emotion recognition.
 
 <div align="center">
 
-<img
-src="https://github-readme-activity-graph.vercel.app/graph?username=ShoneYohannan&theme=github-compact&hide_border=true"
-width="95%"
-alt="Shone Yohannan GitHub Contribution Graph"
-/>
+[![Shone's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ShoneYohannan&theme=github-dark&hide_border=true)](https://github.com/ShoneYohannan)
 
 </div>
 
