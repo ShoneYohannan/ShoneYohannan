@@ -156,15 +156,27 @@ Computer-vision project focused on real-time facial emotion recognition.
 ---
 
 
-## 📊 GitHub Activity
+## 🐍 GitHub Contribution Activity
 
 <div align="center">
 
-<img
-src="https://github-readme-activity-graph.vercel.app/graph?username=ShoneYohannan&theme=github-dark&hide_border=true&v=2"
-width="100%"
-alt="Shone Yohannan GitHub Activity Graph"
-/>
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/ShoneYohannan/ShoneYohannan/output/github-contribution-grid-snake-dark.svg"
+  />
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/ShoneYohannan/ShoneYohannan/output/github-contribution-grid-snake.svg"
+  />
+
+  <img
+    alt="GitHub Contribution Snake"
+    src="https://raw.githubusercontent.com/ShoneYohannan/ShoneYohannan/output/github-contribution-grid-snake.svg"
+  />
+
+</picture>
 
 </div>
 ---
