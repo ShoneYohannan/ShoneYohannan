@@ -160,23 +160,11 @@ Computer-vision project focused on real-time facial emotion recognition.
 
 <div align="center">
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/ShoneYohannan/ShoneYohannan/output/github-contribution-grid-snake-dark.svg"
-  />
-
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/ShoneYohannan/ShoneYohannan/output/github-contribution-grid-snake.svg"
-  />
-
-  <img
-    alt="GitHub Contribution Snake"
-    src="https://raw.githubusercontent.com/ShoneYohannan/ShoneYohannan/output/github-contribution-grid-snake.svg"
-  />
-
-</picture>
+<img
+  src="https://raw.githubusercontent.com/ShoneYohannan/ShoneYohannan/output/github-contribution-grid-snake-dark.svg"
+  alt="GitHub Contribution Snake"
+  width="100%"
+/>
 
 </div>
 ---
